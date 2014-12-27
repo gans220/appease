@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "/C/Users/Ganesh/Desktop/My Websites/Appease"
+		}
+	],
+
+	"settings":
+	{
+		"less2css":
+		{
+			"lessBaseDir": "less",
+            "outputDir": "mybootstrap\\css",
+            "main_file": "my.bootstrap.less",
+            "minify": true
+		}
+	}
+}

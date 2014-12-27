@@ -1,0 +1,531 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"userUg",
+				"userUgGpaGroup"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"prev",
+				"prevButton"
+			],
+			[
+				"pro",
+				"progress-bar"
+			],
+			[
+				"pr",
+				"progress-bar"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"use",
+				"userName"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"butt",
+				"buttonContainer"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"name",
+				"userName"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ca",
+				"carousel-inner"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"my",
+				"myCarousel"
+			],
+			[
+				"for",
+				"formSubmit"
+			],
+			[
+				"car",
+				"carNext"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"form",
+				"formContainer"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ad",
+				"address"
+			],
+			[
+				"ci",
+				"cities"
+			],
+			[
+				"rea",
+				"reasonParagh"
+			],
+			[
+				"reas",
+				"reasonWritupText"
+			],
+			[
+				"cont",
+				"contentContainer"
+			],
+			[
+				"button",
+				"buttonDiv"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
+				"na",
+				"navbar-collapse"
+			],
+			[
+				"sr",
+				"sr-only"
+			],
+			[
+				"C",
+				"color"
+			],
+			[
+				"colla",
+				"collapsebutton"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 9083,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "$(document).ready(function() { \n\n\n  var prgs=0;\n  var page=1;\n  var error=true;\n\n  $('#myCarousel').carousel('pause');\n\n\n\n  $('#gradDegree').select2();  \n\n     \n\n  $('#nextButton').click(function(){\n\n\n    if($('#myCarousel .active').index('#myCarousel .item')==0)\n    {\n      error=true;\n     if($('#userName').val().trim()==\"\")\n     {\n       document.getElementById(\"userNameGroup\").className=\"has-error\";\n       error=false;\n     }\n     else{\n\n      document.getElementById(\"userNameGroup\").className=\"has-success\";\n    }\n\n    if(!validateEmail())\n    {\n     document.getElementById(\"userMailGroup\").className=\"has-error\";\n     error=false;\n    }\n    else\n    {\n\n      document.getElementById(\"userMailGroup\").className=\"has-success\";\n    }\n\n    if($('#e1').select2('val') == \"\")\n    {\n      document.getElementById(\"userUgUnivGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userUgUnivGroup\").className=\"has-success\";\n    }\n\n    if($('#userUgMajor').val().trim()==\"\")\n    {\n      document.getElementById(\"userUgMajorGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userUgMajorGroup\").className=\"has-success\";\n    }\n\n    if($('#userUgGpa').val().trim()==\"\")\n    {\n      document.getElementById(\"userUgGpaGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userUgGpaGroup\").className=\"has-success\";\n    }\n\n    if(error)\n    {\n\n      $('#myCarousel').carousel('next');\n      prgs+=20;      \n      $('.progress-bar').css('width', prgs+'%').attr('aria-valuenow', prgs);\n      $('#prevButton').css('visibility','visible');\n      $error=true;\n      page++;\n      \n    }\n  }//end of page 1 js\n\n  if($('#myCarousel .active').index('#myCarousel .item')==1)\n  {\n\n    if($('#gre').val().trim()==\"\")\n    {\n      document.getElementById(\"GreGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"GreGroup\").className=\"has-success\";\n    }\n\n    if($('#toefl').val().trim()==\"\")\n    {\n      document.getElementById(\"toeflGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"toeflGroup\").className=\"has-success\";\n    }\n\n     if($('#pgUniv').val().trim()==\"\")\n    {\n      document.getElementById(\"userPgUnivGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userPgUnivGroup\").className=\"has-success\";\n    }\n\n    if($('#gradDegree').val()==\"Choose your Graduate degree\")\n    {\n      document.getElementById(\"gradDegreeUnivGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"gradDegreeUnivGroup\").className=\"has-success\";\n    }\n    \n    if($('#userPgMajor').val().trim()==\"\")\n    {\n      document.getElementById(\"userPgMajorGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userPgMajorGroup\").className=\"has-success\";\n    }\n\n\n\n  }//end of page 2 next click events\n\n\n}); //end of click\n\n\n/*--------------------Start of Blur events-------------------------------------*/\n\n//-----------Page 1\n\n$('#userName').blur(function(){\n\n  if($('#userName').val().trim()==\"\")\n  {\n   document.getElementById(\"userNameGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"userNameGroup\").className=\"has-success\";\n}\n}); //end of username blur\n\n$('#userMail').blur(function(){\n\n if(!validateEmail())\n {\n   document.getElementById(\"userMailGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"userMailGroup\").className=\"has-success\";\n}\n\n});\n\n$('#e1').blur(function(){\n\n  if($('#e1').select2('val') == \"\")\n  {\n   document.getElementById(\"userUgUnivGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"userUgUnivGroup\").className=\"has-success\";\n}\n\n});\n\n$('#userUgMajor').blur(function(){\n\n  if($('#userUgMajor').val().trim()==\"\")\n  {\n   document.getElementById(\"userUgMajorGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"userUgMajorGroup\").className=\"has-success\";\n}\n\n});\n\n$('#userUgGpa').blur(function(){\n\n if($('#userUgGpa').val().trim()==\"\")\n {\n   document.getElementById(\"userUgGpaGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"userUgGpaGroup\").className=\"has-success\";\n}\n});\n\n//-----------Page 2\n\n$('#gre').blur(function(){\n\n if($('#gre').val().trim()==\"\")\n {\n   document.getElementById(\"GreGroup\").className=\"has-error\";\n   error=false;\n }\n else{\n\n  document.getElementById(\"GreGroup\").className=\"has-success\";\n}\n});\n\n$('#toefl').blur(function(){\n\n  if($('#toefl').val().trim()==\"\")\n    {\n      document.getElementById(\"toeflGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"toeflGroup\").className=\"has-success\";\n    }\n \n});\n\n\n$('#gradDegree').blur(function(){\n\n  if($('#gradDegree').val()==\"Choose your Graduate degree\")\n    {\n      document.getElementById(\"gradDegreeUnivGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"gradDegreeUnivGroup\").className=\"has-success\";\n    }\n \n});\n\n//for grad degree blur\n\n\n\n$('#userPgMajor').blur(function(){\n\n if($('#userPgMajor').val().trim()==\"\")\n    {\n      document.getElementById(\"userPgMajorGroup\").className=\"has-error\";\n      error=false;\n    }\n    else\n    {\n      document.getElementById(\"userPgMajorGroup\").className=\"has-success\";\n    }\n});\n\n\n\n\n\n\n\n\n/*--------------------End of Blur events-------------------------------------*/\n\n$('#prevButton').click(function(){\n\n  $('#myCarousel').carousel('prev');\n\n});\n\nfunction validateEmail()\n{\n  var reg = /^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$/\n  if (reg.test($('#userMail').val())){\n    return true; \n  }\n  else{\n    return false;\n  }\n}\n\n});",
+			"file": "myjs/onreadyjs.js",
+			"file_size": 6493,
+			"file_write_time": 130599359071238545,
+			"settings":
+			{
+				"buffer_size": 5888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "survey.php",
+			"settings":
+			{
+				"buffer_size": 9351,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "myjs/usunivlist.js",
+			"settings":
+			{
+				"buffer_size": 115139,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"m",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ganesh/AppData/Local/Temp/1-onreadyjs.js",
+		"/C/Users/Ganesh/AppData/Local/Temp/3-survey.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/myjs/onreadyjs.js",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/myjs/usunivlist.js",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/mycss/select2.css",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/survey.php",
+		"/C/Users/Ganesh/AppData/Local/Temp/2-select2.css",
+		"/C/Users/Ganesh/AppData/Local/Temp/2-survey.php",
+		"/C/Users/Ganesh/AppData/Local/Temp/1-select2.css",
+		"/C/Users/Ganesh/AppData/Local/Temp/1-survey.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/myjs/univlist.js",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/mycss/select2-bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/usuniv.txt",
+		"/C/Users/Ganesh/AppData/Local/Temp/4-survey.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/survey2.php",
+		"/C/Users/Ganesh/AppData/Local/Temp/1-survey2.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/index.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/test.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/type.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/buttons.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/navbar.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.bootstrap.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/mail.php",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/survey.html",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/index.html",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.bootsrap.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.variables.css",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.bootsrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/bootstrap.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/appease.sublime-project",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/lib/bootstrap-3.2.0/less/grid.less",
+		"/C/Users/Ganesh/Desktop/My Websites/Appease/less/my.variable.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/badges.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/index.html",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/bootstrap-custom/css/custom.bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/onestopsolution.sublime-project",
+		"/C/Users/Ganesh/AppData/Roaming/Sublime Text 2/Packages/Less2Css/README.md",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.bootstrap.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/mixins/image.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.variables.css",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap-theme.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css",
+		"/C/Users/Ganesh/Desktop/My Websites/US Project/index.html",
+		"/C/Users/Ganesh/Desktop/My Websites/US Project/form.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$error",
+			"multi",
+			"border",
+			"multi",
+			"multiple",
+			"-",
+			"multi",
+			"multiple",
+			"selected",
+			"border-radius",
+			"shadow",
+			"5em",
+			"lead",
+			"7em",
+			"icon-bar",
+			"color",
+			"@line-height-computed",
+			"nav",
+			"@import \"",
+			"@import \"/lib/",
+			"@import \"",
+			"variables.less",
+			"009688",
+			"nav"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@import \"../lib/bootstrap-3.2.0/less/",
+			"@import \"../lib/",
+			"@import \"/lib/bootstrap-3.2.0/less/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 9083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3612,
+								3612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "myjs/onreadyjs.js",
+					"settings":
+					{
+						"buffer_size": 5888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5253,
+								5253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "survey.php",
+					"settings":
+					{
+						"buffer_size": 9351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2602,
+								2602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2006.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "myjs/usunivlist.js",
+					"settings":
+					{
+						"buffer_size": 115139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115137,
+								115137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 32660.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/onestopsolution.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,191 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sr",
+				"sr-only"
+			],
+			[
+				"C",
+				"color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"colla",
+				"collapsebutton"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"m",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/badges.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/index.html",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.variables.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/bootstrap-custom/css/custom.bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/onestopsolution.sublime-project",
+		"/C/Users/Ganesh/AppData/Roaming/Sublime Text 2/Packages/Less2Css/README.md",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.bootstrap.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/lib/bootstrap-3.2.0/less/mixins/image.less",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.variables.css",
+		"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/less/custom.bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap-theme.css",
+		"/C/Users/Ganesh/Desktop/My Websites/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css",
+		"/C/Users/Ganesh/Desktop/My Websites/US Project/index.html",
+		"/C/Users/Ganesh/Desktop/My Websites/US Project/form.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@import \"/lib/",
+			"@import \"",
+			"variables.less",
+			"009688",
+			"nav"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@import \"../lib/",
+			"@import \"/lib/bootstrap-3.2.0/less/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Ganesh/Desktop/My Websites/One Stop Solution/onestopsolution.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true
+}
